@@ -9,8 +9,8 @@ import javax.persistence.Id;
 @Entity
 public class Covid {
 	@Id
-//	@GeneratedValue(strategy=GenerationType.AUTO)
-//	private int id;
+@GeneratedValue(strategy=GenerationType.AUTO)
+private int id;
 	private String date  ;
 	private String location;
 	private String new_cases ;
@@ -18,9 +18,9 @@ public class Covid {
 	private String total_cases ;
 	private String total_deaths ;
 	
-//	public int getId() {
-//		return id;
-//	}
+	public int getId() {
+		return id;
+	}
 	
 	public String getDate() {
 		return date;
